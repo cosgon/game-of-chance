@@ -36,7 +36,7 @@ const resultPrinter = (player, computer, res) => {
     let divResult = document.getElementById("result");
     divResult.appendChild(result);
 
-    document.getElementById("resultLine").innerHTML= `You choose <u>${player}</u> <br> Computer choose <u>${computer}</u> <br> So you <u>${res}</u>`;
+    document.getElementById("resultLine").innerHTML= `You chose <u>${player}</u> <br> Computer chose <u>${computer}</u> <br> <u>${res}</u>`;
 }
 
 const playerChooseRock = () => {
