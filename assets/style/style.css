@@ -1,0 +1,188 @@
+/* 
+Theme Name: Dice Roll Guilherme
+Author: Guilherme Gonçalves
+Description: Tema para a entrega 'Rolando Dados'
+Version: 1.0
+
+--------------------------------------------------
+ESTRUTURA BASE
+--------------------------------------------------
+******* VÁRIAVEIS
+******* RESET
+******* ESTILOS GERAIS
+******* BODY
+******* PÁGINA INICIAL
+******* EXTRAS
+******* @MEDIA
+
+font-family: 'Architects Daughter', cursive;
+
+IMPLEMENTADO MOBILE FIRST
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+
+/* VÁRIAVEIS */
+:root{
+    --background-color:#444;
+}
+/* VÁRIAVEIS */
+
+
+/* RESET */
+html, body, figure, div, input, textarea, p, h1, h2, h3, h4, h5, h6, ul, a{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+/* RESET */
+
+
+/* ESTILOS GERAIS */
+html{}
+/* ESTILOS GERAIS */
+
+
+/* BODY */
+body{
+    font-family: 'Architects Daughter', cursive;
+    background-color: var(--background-color);
+    color: #DDF;
+}
+/* BODY */
+
+
+/* PÁGINA INICIAL */
+header{
+    text-align: center;
+    text-shadow: 2px 2px 5px #000;
+}
+
+.container{
+    width: 90%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.container #battle{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin: 30px 0;
+    text-shadow: 2px 2px 5px #000;
+}
+.container #battle #player{
+    width: 200px;
+    text-align: center;
+}
+
+.container #battle #computer{
+    width: 200px;
+    text-align: center;
+}
+
+.container #result {
+    text-align: center;
+    margin: 10px 0;
+}
+
+.container #choose{
+    display: flex;
+    justify-content: space-around;
+    flex-flow: row wrap;
+    color: #FFF;
+}
+.container #choose #paper{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #040F2A;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #123EAB;
+    text-shadow: 3px 3px 5px #000;
+    cursor: pointer;
+}
+.container #choose #paper figure figcaption{
+    display: none;
+}
+.container #choose #paper figure img{
+    width: 100px;
+}
+.container #choose #paper figure{
+    margin: 5px auto;
+    width: 90%;
+    border: 1px solid #071A47;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #DDF;
+}
+
+.container #choose #rock{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #3E2A00;
+    text-align: center;
+    padding: 10px;
+    background-color: #FFAB00;
+    text-shadow: 3px 3px 5px #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.container #choose #rock figure figcaption{
+    display: none;
+}
+.container #choose #rock figure img{
+    width: 100px;
+}
+.container #choose #rock figure{
+    margin: 5px auto;
+    width: 90%;
+    border: 1px solid #BA810B;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #DDF;
+}
+
+.container #choose #scissors{
+    width: 200px;
+    height: 300px;
+    border: 1px solid #3D0003;
+    text-align: center;
+    padding: 10px;
+    background-color: #FB000D;
+    text-shadow: 3px 3px 5px #000;
+    cursor: pointer;
+}
+.container #choose #scissors figure figcaption{
+    display: none;
+}
+.container #choose #scissors figure img{
+    width: 100px;
+}
+.container #choose #scissors figure{
+    margin: 5px auto;
+    width: 90%;
+    border: 1px solid #680005;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    background-color: #DDF;
+}
+/* PÁGINA INICIAL */
+
+
+/* @MEDIA */
+    @media screen and (min-width: 768px){
+        .container #battle{
+            flex-flow: row wrap;
+            justify-content: center;
+        }
+    }
+/* @MEDIA */
